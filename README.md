@@ -6,6 +6,7 @@ This app is a curses interface to send and receive SMS text messages
 over the VoIP provider Twilio.
 
 - Screenshot coming soon.
+![termTextGo Screenshot](images/example1blurred.png)
 
 # Setup
 
