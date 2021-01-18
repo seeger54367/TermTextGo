@@ -1,6 +1,11 @@
 # TermTextGo
 A rewrite of TermText in the Go language
 
+# Purpose
+This app is a curses interface to send and receive SMS text messages
+over the VoIP provider Twilio.
+
+- Screenshot coming soon.
 
 # Setup
 
