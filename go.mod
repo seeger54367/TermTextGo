@@ -14,6 +14,7 @@ require (
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/rthornton128/goncurses v0.0.0-20200912145604-92ce130a4336
 	github.com/saintpete/twilio-go v0.0.0-20161208012519-9a4eeb51fa46
+	github.com/spf13/viper v1.7.1
 	github.com/ttacon/builder v0.0.0-20170518171403-c099f663e1c2 // indirect
 	github.com/ttacon/libphonenumber v1.1.0 // indirect
 	golang.org/x/net v0.0.0-20201224014010-6772e930b67b // indirect

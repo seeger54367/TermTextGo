@@ -51,10 +51,8 @@ func sendMessage(c *Client, m map[string]string) {
 }
 
 func setupClient() *Client {
-	//Gets Twilio AccoundID from a plaintext file
-	sidFile := "/path/to/file"
-	//Gets Twilio Auth Token from a plaintext file
-	authFile := "/path/to/file"
+	sidFile := "/path/to/accountID"
+	authFile := "/path/to/authToken"
 
 	sid, err := ioutil.ReadFile(sidFile)
 	if err != nil {
@@ -73,12 +71,10 @@ func setupClient() *Client {
 	return client
 }
 
-func getContactList(c *Client) []string {
+func getContactList(c *Client, myNum string) []string {
 	var allConvoNumbers = []string{}
 	data := url.Values{}
 	data2 := url.Values{}
-	//Replace "myNum" value with your Twilio number
-	myNum := "+19999999999"
 	data.Set("From", myNum)
 	data.Set("PageSize", "100")
 	msg, _ := c.Messages.GetPage(context.TODO(), data)

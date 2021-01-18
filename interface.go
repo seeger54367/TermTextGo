@@ -15,16 +15,15 @@ func main() {
 		log.Fatal(err)
 	}
 	defer End()
-
+	myNum := "+19999999999"
 	data := map[string]string{"to": "", "from": "", "message": ""}
 	//Add numbers for names to appear in interface
-	knownNumbers := map[string]string{"+19999999999": "Me"}
+	knownNumbers := map[string]string{myNum: "Me"}
 
-	//Change this to your twilio number
-	data["from"] = "+19999999999"
+	data["from"] = myNum
 
 	client := setupClient()
-	contactMenu := getContactList(client)
+	contactMenu := getContactList(client, myNum)
 	convoMenu := getContactMessages(client, contactMenu[0], knownNumbers)
 
 	Raw(true)
