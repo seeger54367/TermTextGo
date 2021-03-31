@@ -51,8 +51,10 @@ func sendMessage(c *Client, m map[string]string) {
 }
 
 func setupClient() *Client {
-	sidFile := "/path/to/accountID"
-	authFile := "/path/to/authToken"
+	//Path to file with Twilio Account ID found on dashboard
+	sidFile := "/path/to/twilioAccountID.txt"
+	//Path to file with Twilio Auth Token found on dashboard
+	authFile := "/path/to/twilioAuth.txt"
 
 	sid, err := ioutil.ReadFile(sidFile)
 	if err != nil {

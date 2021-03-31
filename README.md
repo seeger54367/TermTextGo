@@ -19,8 +19,11 @@ messages.
 ## After Twilio account setup
 - Clone the repo.
 - cd into repo
-- Modify the info in interface.go to add your Twilio number, and
+- Modify the info in main.go to add your Twilio number, and
   existing contacts if desired.
+- In the backend.go file add paths to a file containing your Twilio
+  Account ID and a file containing your account Auth token string. Both
+  are found on the Twilio project dashboard.
 - Run the following command to install:
 
 ```bash
