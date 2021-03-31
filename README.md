@@ -1,5 +1,5 @@
 # TermTextGo
-A rewrite of TermText in the Go language
+A rewrite of [TermText](https://github.com/seeger54367/TermText) in the Go language
 
 # Purpose
 This app is a curses interface to send and receive SMS text messages
