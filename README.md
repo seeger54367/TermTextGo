@@ -31,5 +31,8 @@ messages.
 
 ```
 
-
-
+# Keybindings
+- 'k' for up in contact menu. 
+- 'j' for down in contact menu. 
+- 'ENTR' to send message to selected contact. 
+- 'r' to reload messages for all contacts (may seem unresponsive for a couple seconds)
